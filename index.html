@@ -178,33 +178,39 @@
 			<section class="blue">
 				<!-- prise -->
 
-				<section class="prise container">
+				<section class="prise container" id="prise">
 					<h2 class="prise__h2">Что вам нужно?</h2>
 
 					<div class="bones">
-						<div class="bone__menu">
+						<label class="bone__menu">
+							<input type="checkbox" />
 							<img src="./images/prise/bone.svg" alt="" />
 							<h2 class="bone__menu__h2">Ветеринар</h2>
 							<p class="bone__menu__p">От 4 800 ₽ за выезд</p>
-						</div>
+						</label>
 
-						<div class="bone__menu">
+						<label class="bone__menu">
+							<input type="checkbox" />
 							<img src="./images/prise/bone.svg" alt="" />
 							<h2 class="bone__menu__h2">Выгул</h2>
 							<p class="bone__menu__p">От 800 ₽ за прогулку</p>
-						</div>
-						<div class="bone__menu">
+						</label>
+
+						<label class="bone__menu">
+							<input type="checkbox" />
 							<img src="./images/prise/bone.svg" alt="" />
 							<h2 class="bone__menu__h2">Отель</h2>
 							<p class="bone__menu__p">От 1800 ₽ за сутки</p>
-						</div>
-						<div class="bone__menu">
+						</label>
+
+						<label class="bone__menu">
+							<input type="checkbox" />
 							<img src="./images/prise/bone.svg" alt="" />
 							<h2 class="bone__menu__h2">Консультация</h2>
 							<p class="bone__menu__p">
 								Бесплатно, хоть каждый день
 							</p>
-						</div>
+						</label>
 					</div>
 
 					<div class="prisebone">
@@ -248,8 +254,8 @@
 
 						<h2 class="prise__prise">От 80 000 ₽ До 150 000 ₽</h2>
 						<a href="#form" class="prise__link"
-							><p>Остался 1 шаг</p>
-							<img src="" alt=""
+							><p>Остался еще один шаг</p>
+							<img src="./images/laststep/vniz.svg" alt=""
 						/></a>
 						<p class="prise__minitext">
 							Ориентировочная цена при пересчете на месяц<br />
@@ -260,13 +266,546 @@
 
 				<!-- prise finish -->
 
-				<!-- lastster -->
+				<!-- laststep -->
 
-				<!-- lastster finish -->
+				<section class="laststep container">
+					<div class="laststep__texts">
+						<h2 class="laststep__title title">Последний шаг</h2>
+						<p class="laststep__text">
+							Расскажите о себе и о хвостике, а мы подберем <br />
+							уход, который ему точно понравиться
+						</p>
+
+						<div class="plusblocks">
+							<div class="plusblock">
+								<img src="./images/laststep/lapa.svg" alt="" />
+								<h2 class="plusblock__h2">
+									Фотоотчёты каждый день
+								</h2>
+							</div>
+							<div class="plusblock plusblock-c">
+								<img src="./images/laststep/plus.png" alt="" />
+								<h2 class="plusblock__h2">
+									Ветеринар на связи 24/7
+								</h2>
+							</div>
+							<div class="plusblock">
+								<img src="./images/laststep/heart.svg" alt="" />
+								<h2 class="plusblock__h2">
+									Без спама, только по делу
+								</h2>
+							</div>
+						</div>
+					</div>
+
+					<div class="laststep__block" id="form">
+						<div class="form__row">
+							<div class="form__field">
+								<label class="form__label" for="name"
+									>Как вас зовут?</label
+								>
+								<input
+									class="form__input"
+									id="name"
+									type="text"
+									placeholder="Например, Бобик..."
+								/>
+							</div>
+							<div class="form__field">
+								<label class="form__label" for="contact"
+									>Телефон или Max</label
+								>
+								<input
+									class="form__input"
+									id="contact"
+									type="tel"
+									pattern="[0-9+()\- ]+"
+									placeholder="Куда вам удобнее написать..."
+								/>
+							</div>
+						</div>
+
+						<div class="form__field">
+							<label class="form__label" for="pet"
+								>Как зовут вашего питомца?</label
+							>
+							<input
+								class="form__input"
+								id="pet"
+								type="text"
+								placeholder="Например, Иван..."
+							/>
+						</div>
+
+						<div class="form__field">
+							<p class="form__label">
+								Когда вам удобно говорить?
+							</p>
+							<div class="form__times">
+								<label class="form__time">
+									<input type="radio" name="time" />
+									<span>Утром</span>
+								</label>
+								<label class="form__time">
+									<input type="radio" name="time" />
+									<span>Днем</span>
+								</label>
+								<label class="form__time">
+									<input type="radio" name="time" />
+									<span>Вечером</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="form__field">
+							<label class="form__label" for="about">
+								Расскажите о характере и привычках вашего
+								питомца (необязательно)
+							</label>
+							<textarea
+								class="form__input form__textarea"
+								id="about"
+								placeholder="Любит играть, бояться громких звуков...."
+							></textarea>
+						</div>
+
+						<div class="form__check">
+							<label class="form__checkbox">
+								<input type="checkbox" />
+								<span class="form__box"></span>
+							</label>
+							<p class="form__checktext">
+								Согласен(на) на обработку
+								<a
+									href="./docs/personal-data.pdf"
+									target="_blank"
+									rel="noopener"
+									class="form__link"
+									>персональных данных</a
+								>
+							</p>
+						</div>
+
+						<button class="form__button title" type="button">
+							Отправить!
+						</button>
+					</div>
+				</section>
+
+				<!-- laststep finish -->
+
+				<!-- faq -->
+
+				<section class="faq container" id="faq">
+					<h2 class="faq__title title">Вам может быть интересно</h2>
+					<h2 class="faq__text">
+						Ответили на вопросы, которые нам задают чаще всего
+					</h2>
+
+					<div class="faq__details__blocks">
+						<details class="faq__details" open>
+							<summary class="faq__summary">
+								<span class="faq__num">01</span>
+								<h3 class="faq__summary-text">
+									Как проходит знакомство с питомцем?
+								</h3>
+								<span class="faq__icon"></span>
+							</summary>
+							<p class="faq__p">
+								Сначала мы созваниваемся и обсуждаем характер,
+								привычки и особые потребности вашего хвостика.
+								Затем наш специалист приезжает к вам домой,
+								чтобы познакомиться с питомцем в привычной
+								обстановке. Так он привыкает к нам спокойно и
+								без стресса
+							</p>
+						</details>
+
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<span class="faq__num">02</span>
+								<h3 class="faq__summary-text">
+									Что, если мне понадобится ветеринар?
+								</h3>
+								<span class="faq__icon"></span>
+							</summary>
+							<p class="faq__p">
+								Ветеринар на связи круглосуточно. Если с
+								питомцем что-то случилось, мы сразу организуем
+								выезд врача или поможем добраться до клиники.
+								Обо всех действиях мы сообщаем вам сразу, чтобы
+								вы были в курсе
+							</p>
+						</details>
+
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<span class="faq__num">03</span>
+								<h3 class="faq__summary-text">
+									Буду ли я знать, как дела у хвостика?
+								</h3>
+								<span class="faq__icon"></span>
+							</summary>
+							<p class="faq__p">
+								Да, каждый день мы присылаем фотоотчёты и
+								короткие сообщения о том, как питомец ест,
+								гуляет и играет. А если захотите узнать
+								подробности раньше, просто напишите нам, и мы
+								сразу ответим
+							</p>
+						</details>
+
+						<details class="faq__details">
+							<summary class="faq__summary">
+								<span class="faq__num">04</span>
+								<h3 class="faq__summary-text">
+									Возьмёте ли вы собаку с особенностями?
+								</h3>
+								<span class="faq__icon"></span>
+							</summary>
+							<p class="faq__p">
+								Да, мы работаем с питомцами разного возраста и
+								характера: пожилыми, пугливыми, с проблемами со
+								здоровьем. Расскажите об особенностях в форме
+								или по телефону, и мы подберём подходящий уход
+							</p>
+						</details>
+
+						<div class="faq__questions">
+							<h2 class="faq__q-h2 title">
+								Не нашли свой вопрос?<br />Пишите нам!
+							</h2>
+
+							<div class="faq__contacts">
+								<a
+									href="mailto:domshvostom@gmail.com"
+									class="faq__contact"
+								>
+									<img src="./images/faq/mail.svg" alt="" />
+									<p>domshvostom@gmail.com</p>
+								</a>
+								<a href="#" class="faq__contact">
+									<img src="./images/faq/max.svg" alt="" />
+									<p>@domSHvostom</p>
+								</a>
+								<a href="tel:89008536112" class="faq__contact">
+									<img src="./images/faq/phone.svg" alt="" />
+									<p>+7 (900) 853-61-12</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- faq finish -->
+
+				<!-- revives  -->
+
+				<section class="revive" id="revive">
+					<h2 class="revive__title title container">
+						Отзывы тех, кому мы уже помогли
+					</h2>
+
+					<div class="revive__line">
+						<div class="revive__track">
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog1.png"
+									alt="Рекс"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Рекс</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Очень понравился подход: сначала
+										подробно расспросили о привычках, потом
+										спокойно познакомились с Рексом. Было
+										видно, что ему комфортно
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/og2.jpg"
+									alt="Бим"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Бим</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Оставляли Бима на несколько дней. Каждый
+										день присылали фото и короткие отчёты,
+										поэтому мы были спокойны
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog3.jpg"
+									alt="Лаки"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Лаки</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Лаки пугливый и не сразу идёт к новым
+										людям, но здесь нашли к нему подход.
+										Гуляли без спешки, всё делали аккуратно
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog4.jpg"
+									alt="Макс"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Макс</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Понадобилась консультация ветеринара,
+										ответили быстро и помогли разобраться.
+										Приятно, что не оставили один на один с
+										вопросом
+									</p>
+								</div>
+							</div>
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog1.png"
+									alt="Рекс"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Рекс</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Очень понравился подход: сначала
+										подробно расспросили о привычках, потом
+										спокойно познакомились с Рексом. Было
+										видно, что ему комфортно
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/og2.jpg"
+									alt="Бим"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Бим</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Оставляли Бима на несколько дней. Каждый
+										день присылали фото и короткие отчёты,
+										поэтому мы были спокойны
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog3.jpg"
+									alt="Лаки"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Лаки</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Лаки пугливый и не сразу идёт к новым
+										людям, но здесь нашли к нему подход.
+										Гуляли без спешки, всё делали аккуратно
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog4.jpg"
+									alt="Макс"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Макс</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Понадобилась консультация ветеринара,
+										ответили быстро и помогли разобраться.
+										Приятно, что не оставили один на один с
+										вопросом
+									</p>
+								</div>
+							</div>
+
+							<div class="revive__card" tabindex="0">
+								<img
+									src="./images/revive/dog5.jpg"
+									alt="Тоби"
+									class="revive__photo"
+								/>
+
+								<div class="revive__info">
+									<h3 class="revive__name title">Тоби</h3>
+									<img
+										src="./images/revive/stars.svg"
+										alt=""
+										class="revive__paws"
+									/>
+								</div>
+
+								<div class="revive__text">
+									<p>
+										Пользовались выгулом, когда не
+										получалось вернуться вовремя. Тоби
+										возвращался довольный, а нам присылали
+										отчёт после прогулки
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!--  revives finish  -->
 			</section>
-
 			<!-- blue finish -->
 		</main>
+
 		<!-- main finish -->
+
+		<!-- footer -->
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__left">
+					<img
+						src="./images/footer/logo.png"
+						alt=""
+						class="footer__logo"
+					/>
+
+					<div class="footer__icons">
+						<a href="tel:89008536112"
+							><img class="footer__icons_img" src="./images/footer/phone.svg" alt=""
+						/></a>
+						<a href="#"
+							><img class="footer__icons_img" src="./images/footer/max.svg" alt=""
+						/></a>
+						<a href="mailto:domshvostom@gmail.com"
+							><img class="footer__icons_img" src="./images/footer/mail.svg" alt=""
+						/></a>
+					</div>
+
+					<a
+						href="./docs/privacy.pdf"
+						target="_blank"
+						class="footer__policy"
+					>
+						Политика конфиденциальности
+					</a>
+				</div>
+
+				<div class="footer__right">
+					<div class="footer__columns">
+						<div class="footer__column">
+							<h3 class="footer__h3">Сайт</h3>
+							<a href="#service">Услуги</a>
+							<a href="#prise">Цены</a>
+							<a href="#faq">Частые вопросы</a>
+							<a href="#revive">Отзывы</a>
+						</div>
+
+						<div class="footer__column">
+							<h3 class="footer__h3">Мы на связи</h3>
+							<a href="mailto:domshvostom@gmail.com"
+								>domshvostom@gmail.com</a
+							>
+							<a href="#">@domSHvostom</a>
+							<a href="tel:89008536112">+7 (900) 853-61-12</a>
+						</div>
+					</div>
+
+					<p class="footer__author">
+						Каримов Ильяс Ильдусович 327 ВЕБ
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- footer finish -->
 	</body>
 </html>
